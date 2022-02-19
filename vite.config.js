@@ -8,6 +8,7 @@ export default defineConfig(async ({ mode })=> {
   return {
     base: '/',
     build: {
+      outDir: 'docs',
       minify: false
     },
     plugins: [
