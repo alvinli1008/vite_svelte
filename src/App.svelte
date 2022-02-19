@@ -20,7 +20,7 @@
     console.log("afterUpdate");
     setTimeout(() => {
       visible = true;
-    }, 1000);
+    }, 500);
   });
 </script>
 
@@ -43,7 +43,7 @@
     justify-content: center;
 
     &_bg {
-      background-image: url("./assets/bg.jpeg");
+      background-image: url("./assets/bg_star.jpeg");
       position: absolute;
       height: 100%;
       width: 100%;
