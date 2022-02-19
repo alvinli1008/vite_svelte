@@ -428,4 +428,4 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tw-z-10 {
   z-index: 10;
 }
-.container.svelte-1rb6mwl{position:fixed;top:0;left:0;width:100%;height:100%;background:#333;display:flex;align-items:center;justify-content:center}.container_bg.svelte-1rb6mwl{background-image:url("/assets/bg.d3c2ad76.jpeg");position:absolute;height:100%;width:100%;opacity:0;background-position:center 0;background-repeat:no-repeat;background-size:cover;transition:opacity 500ms ease-in-out}.container_mask.svelte-1rb6mwl{position:absolute;height:100%;width:100%;background-color:rgba(0, 0, 0, 0.2)}
+.container.svelte-1rb6mwl{position:fixed;top:0;left:0;width:100%;height:100%;background:#333;display:flex;align-items:center;justify-content:center}.container_bg.svelte-1rb6mwl{background-image:url("/vite_svelte/assets/bg.d3c2ad76.jpeg");position:absolute;height:100%;width:100%;opacity:0;background-position:center 0;background-repeat:no-repeat;background-size:cover;transition:opacity 500ms ease-in-out}.container_mask.svelte-1rb6mwl{position:absolute;height:100%;width:100%;background-color:rgba(0, 0, 0, 0.2)}

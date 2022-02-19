@@ -6,7 +6,7 @@ import sveltePreprocess from 'svelte-preprocess';
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode })=> {
   return {
-    base: '/',
+    base: '/vite_svelte',
     build: {
       outDir: 'docs',
       minify: false
