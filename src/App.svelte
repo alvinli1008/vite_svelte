@@ -1,5 +1,5 @@
 <script>
-  import "./app.css";
+  import "./App.css";
 
   import { onMount, onDestroy, beforeUpdate, afterUpdate } from "svelte";
 
@@ -27,7 +27,7 @@
 <main class="container">
   <div class="container_bg" style={visible ? "opacity: 1" : ""} />
   <div class="container_mask" />
-  <div class="text-[#30354D] tw-z-10">Hello world!</div>
+  <div class="text-[#30354D] tw-z-10">所念皆心河!</div>
 </main>
 
 <style lang="scss">
@@ -43,7 +43,7 @@
     justify-content: center;
 
     &_bg {
-      background-image: url("./assets/bg_star.jpeg");
+      background-image: url("./assets/bg.jpeg");
       position: absolute;
       height: 100%;
       width: 100%;
