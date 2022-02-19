@@ -20,7 +20,7 @@
     console.log("afterUpdate");
     setTimeout(() => {
       visible = true;
-    }, 0);
+    }, 1000);
   });
 </script>
 

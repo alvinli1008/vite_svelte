@@ -9,7 +9,7 @@ export default defineConfig(async ({ mode })=> {
     base: '/vite_svelte',
     build: {
       outDir: 'docs',
-      minify: false
+      // minify: false
     },
     plugins: [
       svelte({
