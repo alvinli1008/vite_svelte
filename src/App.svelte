@@ -1,33 +1,38 @@
 <script>
-  import "./App.css";
+  import './App.css';
+  // import { Button } from '~/components';
 
-  import { onMount, onDestroy, beforeUpdate, afterUpdate } from "svelte";
+  import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
 
-  let visible = false;
-  onMount(() => {
-    console.log("onMount");
+  onMount(async() => {
+    console.log('onMount');
+    var bg = new Image();
+    bg.src = 'https://assets.shoplazza.com/oss/operation/4e4d470ad447cd5834378067be5c0547.jpg';
+    bg.onload = () => {
+      var bgDom = document.getElementById('bg');
+      bgDom.style['background-image'] = `url(${bg.src})`;
+      bgDom.style['opacity'] = '1';
+    };
   });
 
   onDestroy(() => {
-    console.log("onDestroy");
+    console.log('onDestroy');
   });
 
   beforeUpdate(() => {
-    console.log("beforeUpdate");
+    console.log('beforeUpdate');
   });
 
   afterUpdate(() => {
-    console.log("afterUpdate");
-    setTimeout(() => {
-      visible = true;
-    }, 500);
+    console.log('afterUpdate');
   });
 </script>
 
 <main class="container">
-  <div class="container_bg" style={visible ? "opacity: 1" : ""} />
+  <div id="bg" class="container_bg" />
   <div class="container_mask" />
   <div class="text-[#30354D] tw-z-10">所念皆心河!</div>
+  <!-- <Button>btn</Button> -->
 </main>
 
 <style lang="scss">
@@ -43,7 +48,6 @@
     justify-content: center;
 
     &_bg {
-      background-image: url("./assets/bg.jpeg");
       position: absolute;
       height: 100%;
       width: 100%;

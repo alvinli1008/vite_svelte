@@ -15,11 +15,11 @@ export default defineConfig(async ({ mode }) => {
       svelte({
         preprocess: sveltePreprocess()
       }),
-    ]
-    // resolve: {
-    //   alias: {
-    //     '~': path.resolve(__dirname, 'src')
-    //   }
-    // }
+    ],
+    resolve: {
+      alias: {
+        '~': path.resolve('./', 'src')
+      }
+    }
   };
 });
