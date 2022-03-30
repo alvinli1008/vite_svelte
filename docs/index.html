@@ -138,6 +138,9 @@
   <body>
     <div id="app"></div>
     <script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       function addToCart() {
         $(document.body).trigger('partytown.addToCart', {
           content_id: '301',
